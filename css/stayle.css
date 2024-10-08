@@ -204,6 +204,7 @@ color: #2B6151;
 }
 .rates .box .info img {
     border-radius: 50%;
+    border: 2px solid #2B6151;
 }
 .rates .box .info p {
     font-size: 18px;
