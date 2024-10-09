@@ -50,6 +50,9 @@
                                                     اراء الـعملاء
                                                 </a>
                                             </li>
+                                            <li>
+                                                <a href="#" class="order-now">اطلب استشاره الان</a>
+                                            </li>
                                         </ul>
                                         
                                     <nav>
@@ -74,9 +77,13 @@
                                                     اراء الـعملاء
                                                 </a>
                                             </li>
-                                            <li onclick=showSidebar() class="hideIconMenu ">
+                                            <li  class="hideOnMobile">
+                                                <a href="#" class="order-now"  style="margin: 0;">اطلب استشاره الان</a>
+                                            </li>
+                                            <li onclick=showSidebar() class="hideIconMenu">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#2B6151"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                                             </li>
+                                            
                                         </ul>
                                     </nav>
                                 </div>
@@ -257,11 +264,15 @@
                             function showSidebar() {
                                 const sidebar = document.querySelector(".sidebar");
                                 sidebar.style.display = "flex"
+                                const hideIconMenu = document.querySelector(".hideIconMenu")
+                                hideIconMenu.style.display = "none";
                     
                             }
                             function hideSidebar() {
                                  const sidebar = document.querySelector(".sidebar");
                                 sidebar.style.display = "none"
+                                const hideIconMenu = document.querySelector(".hideIconMenu")
+                                hideIconMenu.style.display = "block";
                             }
                         </script>
                 </body>

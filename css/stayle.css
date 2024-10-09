@@ -50,7 +50,6 @@ a {
 @media (max-width:767px) {
     .main-title {
         padding-right: 30px;
-;
     }
 }
 
@@ -118,8 +117,13 @@ nav li:first-child{
 .sidebar li:first-child{
     position: fixed;
    top: 0;
-   left: -300px;
+   right: 280px;
    border: none;
+}
+.sidebar li:last-child{
+    border: none;
+    margin-top: 40px;
+    color: white !important;
 }
 .sidebar li a {
     width: 100%;
@@ -127,7 +131,7 @@ nav li:first-child{
     padding-right: 20px;
     font-size: 18px;
     font-weight: 500;
-    color:#142e26 !important ;
+    color:#142e26 ;
 }
 .sidebar a{
     width: 100%;
@@ -144,11 +148,10 @@ nav li:first-child{
     }
 }
 @media (min-width: 767px) {
-.hideIconMenu {
-    display: none;
+    .hideIconMenu {
+        display: none;
+    }
 }
-}
-
 /* Start landing style */
 .landing {
     padding-top: 100px;
@@ -381,6 +384,7 @@ nav li:first-child{
         /* margin: auto; */
         font-size: 28px;
     }
+   
 }
 
 .contact {
@@ -448,7 +452,12 @@ textarea {
     border-radius: 3px;
 
 }
-
+@media (max-width:767px) {
+    .contact .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 40px;
+}
+}
 .footer {
     padding: 100px 0;
 }
