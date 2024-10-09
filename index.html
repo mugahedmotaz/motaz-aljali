@@ -24,13 +24,15 @@
                                     <!-- <h2 class="logo"> مُـعـتــز </h2> -->
                                     <div class="logo">
                                         <img src="./2x/Artboard 2@2x.png" alt="logo" width="180">
-                                        
                                     </div>
-                                    <div class="linkes">
-                                        <ul>
+                                    
+                                        <ul class="sidebar">
+                                            <li onclick=hideSidebar()>
+                                              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                                            </li>
                                             <li>
                                                 <a href="#home">
-                                                    نبذه
+                                                    الرئيسية
                                                 </a>
                                             </li>
                                             <li>
@@ -49,7 +51,34 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
+                                        
+                                    <nav>
+                                        <ul>
+                                            <li class="hideOnMobile">
+                                                <a href="#home">
+                                                    الرئيسية
+                                                </a>
+                                            </li>
+                                            <li class="hideOnMobile">
+                                                <a href="#edu">
+                                                    اتصل بنا
+                                                </a>
+                                            </li>
+                                            <li class="hideOnMobile">
+                                                <a href="#cer">
+                                                    الإسـتشارات
+                                                </a>
+                                            </li>
+                                            <li class="hideOnMobile">
+                                                <a href="#pro">
+                                                    اراء الـعملاء
+                                                </a>
+                                            </li>
+                                            <li onclick=showSidebar() class="hideIconMenu ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#2B6151"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                                 <!-- Start landinng page -->
@@ -57,7 +86,6 @@
                                     <div class="container">   
                                         <div class="info-landing">
                                             <div class="landing-d">
-
                                                 <h1 class="title">تحتاج استشـــارة 
                                                     أو خدمة قانونـــية؟ </h1>
                                                     <p class="landing-text">
@@ -66,7 +94,6 @@
                                                     
                                                 </div>
                                                 <div class="landing-img">
-
                                                     <img src="./icons8-scale-of-justice-64.png" alt="">
                                                 </div>
                                             </div>              
@@ -226,7 +253,17 @@
                         </div>
                         
                       
-                        
+                        <script>
+                            function showSidebar() {
+                                const sidebar = document.querySelector(".sidebar");
+                                sidebar.style.display = "flex"
+                    
+                            }
+                            function hideSidebar() {
+                                 const sidebar = document.querySelector(".sidebar");
+                                sidebar.style.display = "none"
+                            }
+                        </script>
                 </body>
                 </html>
 
