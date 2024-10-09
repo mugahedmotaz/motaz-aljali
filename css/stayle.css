@@ -374,6 +374,7 @@ nav li:first-child {
     font-size: 18px;
     padding-right: 100px;
 }
+
 @media (max-width:767px) {
     .projects .p {
         padding-right: 30px;
@@ -593,10 +594,10 @@ textarea {
     height: 300px;
 }
 
-.question:active+.answer {
+.question:hover+.answer {
     display: block;
 }
 
-.question:active span {
+.question:hover span {
     display: none;
 }
