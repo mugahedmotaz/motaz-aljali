@@ -593,10 +593,10 @@ textarea {
     height: 300px;
 }
 
-.question:focus+.answer {
+.question:active+.answer {
     display: block;
 }
 
-.question:focus span {
+.question:active span {
     display: none;
 }
