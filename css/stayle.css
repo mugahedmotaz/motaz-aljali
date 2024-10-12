@@ -38,6 +38,10 @@ a {
     margin: 50px 0;
     color: #2B6151;
 }
+.sconed-title {
+    margin: 20px 0;
+    color: #2B6151;   
+}
 
 
 .container {
@@ -199,6 +203,7 @@ nav li:first-child {
     }
 
     .landing .container,
+    
     .another .container {
         padding: 0;
     }
