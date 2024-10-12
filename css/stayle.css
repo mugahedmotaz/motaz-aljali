@@ -107,6 +107,7 @@ nav li:first-child {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 80px;
+ 
     /* padding-right: 40px; */
 }
 
