@@ -207,19 +207,26 @@
     <!-- start q&a  -->
     <h1 class="main-title">الاسئلة الشايعة</h1>
 <div class="qna-container">
-    <button class="question" tabindex="0" onclick=show()>هل استطيع طلب استشاره في اي وقت<span class="show"><i class="fa fa-angle-down"></i></span></button>
-    <div class="answer">
-        <p>نعم يمكنك طلب الاستشاره في اي وقت عبر مراسلتنا في الايميل او الواتس اب</p>
+    <div class="qna">
+        <button class="question" >هل استطيع طلب استشاره في اي وقت<span><i class="fa fa-angle-down"></i></span></button>
+        <div class="answer">
+            <p>نعم يمكنك طلب الاستشاره في اي وقت عبر مراسلتنا في الايميل او الواتس اب</p>
+        </div>
     </div>
-    <button class="question" tabindex="1" >كيف ادفع مقابل الاستشاره<span class="show"><i class="fa fa-angle-down"></i></span></button>
-    <div class="answer">
-        <p>يمكنك الدفع عن طريق التحويل البنكي او بطاقات الائتمان</p>
+    <div class="qna">
+        <button class="question" >كيف ادفع مقابل الاستشاره<span><i class="fa fa-angle-down"></i></span></button>
+        <div class="answer">
+            <p>يمكنك الدفع عن طريق التحويل البنكي او بطاقات الائتمان</p>
+        </div>
     </div>
-    <button class="question" tabindex="2" >كيف تتم الاستشاره عن طريق الفيديو<span class="show"><i class="fa fa-angle-down"></i></span></button>
-    <div class="answer">
-        <p>تتم عن طريق برنامج زووم او احد البرامج المشابهه</p>
+        <div class="qna">
+            <button class="question"  >كيف تتم الاستشاره عن طريق الفيديو<span><i class="fa fa-angle-down"></i></span></button>
+            <div class="answer">
+                <p>تتم عن طريق برنامج زووم او احد البرامج المشابهه</p>
+            </div>
+        </div>
     </div>
-</div>
+<!-- </div> -->
     <!-- start q&a  -->
     
                             <!-- Contact me -->
@@ -291,12 +298,9 @@
                                     const hideIconMenu = document.querySelector(".hideIconMenu")
                                     hideIconMenu.style.display = "block";
                                 }
-function show() {
-    show = document.querySelector(".question span")
-    
-}
+
                             </script>
-               
+               <script src="./js/main.js"></script>
                     </body>
                     </html>
 

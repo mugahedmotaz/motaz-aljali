@@ -579,25 +579,29 @@ textarea {
 
 }
 
-.answer {
-    display: none;
+.answer  p{
     padding: 10px;
     border: 1px solid #ddd;
     border-top: none;
     margin-bottom: 10px;
     font-weight: 400;
     color: #142e26;
-
 }
 
 .qna-container {
-    height: 300px;
+    height: 400px;
 }
-
-.question:hover+.answer {
-    display: block;
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
 }
-
-.question:hover span {
-    display: none;
+.qna.active .answer {
+    max-height: 200px;
+}
+.qna.active i {
+    transform: rotate(180deg);
+}
+.question i {
+    transition: transform 0.5s ease-in;
 }
