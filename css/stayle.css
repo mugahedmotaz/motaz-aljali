@@ -10,6 +10,7 @@
 
 :root {
     --main-color: #2B6151;
+    
     --text-color: #000000;
     --background-color: #fffff1;
     --box-shadow: rgba(0, 0, 0, 0.1)0px 5px 10px -3px;
@@ -531,13 +532,15 @@ textarea {
     padding: 10px;
     background-color: #2B6151;
     cursor: pointer;
-    font-size: 22px;
+    /* font-size: 22px; */
     margin: 0 10px;
     text-align: center;
     color: white;
     border-radius: 5px;
 }
-
+.social i:first-child {
+    width: 36px;
+}
 .footer p {
     text-align: center;
     font-size: 18px;
@@ -629,14 +632,25 @@ textarea {
 .important-link li {
     padding-top: 5px;
 }
+.important-link li a{
+font-size: 18px;
+    font-weight: 500;
+    line-height: 1.9em;
+    color:#142e26 ;
+}
 .important-link .right {
     max-width: 500px;
 }
 .important-link .right p {
   text-align: right;
-
+    font-weight: 500;
+    line-height: 1.9em;
+    color:#142e26 ;
 
 }
 .important-link h2 {
     margin-bottom: 20px;
+    color: #2B6151;
 }
+
+

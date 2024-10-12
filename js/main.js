@@ -18,3 +18,5 @@ function hideSidebar() {
  const hideIconMenu = document.querySelector(".hideIconMenu")
  hideIconMenu.style.display = "block";
 }
+
+
