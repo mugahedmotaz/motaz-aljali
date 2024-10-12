@@ -605,3 +605,9 @@ textarea {
 .question i {
     transition: transform 0.5s ease-in;
 }
+.landing-policy p {
+    padding-bottom: 30px;
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.9em;
+}
