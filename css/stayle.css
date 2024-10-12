@@ -511,7 +511,7 @@ textarea {
 
 .footer {
     padding: 100px 0;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
 }
 
 .footer img {
@@ -617,4 +617,26 @@ textarea {
     font-weight: 500;
     line-height: 1.9em;
     color:#142e26 ;
+}
+
+.important-link {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* align-items: center; */
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.important-link li {
+    padding-top: 5px;
+}
+.important-link .right {
+    max-width: 500px;
+}
+.important-link .right p {
+  text-align: right;
+
+
+}
+.important-link h2 {
+    margin-bottom: 20px;
 }
